@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BluFisio"
+    tools:context=".ProfiloActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="296dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/symbolmyfisiocoach" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Il tuo profilo"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <!-- ScrollView per gli elementi scrollabili -->
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationViewProfilo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView9"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Testo di istruzioni -->
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Di seguito troverai i tuoi dati personali."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <!-- Campo Nome -->
+            <TextView
+                android:id="@+id/textViewModificaNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Nome"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView19" />
+
+            <EditText
+                android:id="@+id/editTextTextModificaNome"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="325dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/inputstyledisabled"
+                android:clickable="false"
+                android:drawableStart="@drawable/baseline_person_36_profilo"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="Inserisci nome..."
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/GrigioHintText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewModificaNome" />
+
+            <!-- ImageButton per modificare Nome -->
+
+            <!-- Campo Cognome -->
+
+            <!-- ImageButton per modificare Cognome -->
+
+            <!-- Campo Età -->
+            <TextView
+                android:id="@+id/textViewModificaEtà"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Età"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextModificaNome" />
+
+            <!-- ImageButton per modificare Età -->
+
+            <SeekBar
+                android:id="@+id/ModificaAgeseekBar"
+                android:layout_width="270dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:min="0"
+                android:paddingStart="25dip"
+                android:progress="0"
+                android:progressBackgroundTint="@color/GrigioDisattivo"
+                android:progressTint="@color/GrigioDisattivo"
+                android:scaleX="1.3"
+                android:scaleY="1.5"
+                android:thumb="@drawable/baseline_adjust_24"
+                android:thumbTint="@color/GrigioDisattivo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewModificaEtà" />
+
+            <!-- Campo Altezza -->
+
+            <TextView
+                android:id="@+id/textViewModificaAltezza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Altezza"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ModificaAgeseekBar" />
+
+            <SeekBar
+                android:id="@+id/ModificaAltezzaseekBar"
+                android:layout_width="270dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:max="220"
+                android:min="110"
+                android:paddingStart="25dip"
+                android:progress="0"
+                android:progressBackgroundTint="@color/GrigioDisattivo"
+                android:progressTint="@color/GrigioDisattivo"
+                android:scaleX="1.3"
+                android:scaleY="1.5"
+                android:thumb="@drawable/baseline_adjust_24"
+                android:thumbTint="@color/GrigioDisattivo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewModificaAltezza" />
+
+            <!-- ImageButton per modificare Altezza -->
+
+            <!-- Campo Peso -->
+
+            <TextView
+                android:id="@+id/textViewModificaPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Peso"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ModificaAltezzaseekBar" />
+
+            <SeekBar
+                android:id="@+id/ModificaPesoseekBar"
+                android:layout_width="270dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:max="160"
+                android:min="40"
+                android:paddingStart="25dip"
+                android:progress="0"
+                android:progressBackgroundTint="@color/GrigioDisattivo"
+                android:progressTint="@color/GrigioDisattivo"
+                android:scaleX="1.3"
+                android:scaleY="1.5"
+                android:thumb="@drawable/baseline_adjust_24"
+                android:thumbTint="@color/GrigioDisattivo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewModificaPeso" />
+
+            <!-- ImageButton per modificare Peso -->
+
+            <!-- Pulsante di conferma -->
+
+            <TextView
+                android:id="@+id/textViewModificaCounterEta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewModificaEtà"
+                app:layout_constraintEnd_toEndOf="@+id/ModificaAgeseekBar"
+                app:layout_constraintStart_toStartOf="@+id/ModificaAgeseekBar"
+                app:layout_constraintTop_toTopOf="@+id/textViewModificaEtà" />
+
+            <TextView
+                android:id="@+id/textViewModificaCounterAltezza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewModificaAltezza"
+                app:layout_constraintEnd_toEndOf="@+id/ModificaAltezzaseekBar"
+                app:layout_constraintStart_toStartOf="@+id/ModificaAltezzaseekBar"
+                app:layout_constraintTop_toTopOf="@+id/textViewModificaAltezza" />
+
+            <TextView
+                android:id="@+id/textViewModificaCounterPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewModificaPeso"
+                app:layout_constraintEnd_toEndOf="@+id/ModificaPesoseekBar"
+                app:layout_constraintStart_toStartOf="@+id/ModificaPesoseekBar"
+                app:layout_constraintTop_toTopOf="@+id/textViewModificaPeso" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Dati personali"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Credenziali di accesso"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ModificaPesoseekBar" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Di seguito troverai le tue credenziali di accesso, per modificarle attiva i campi cliccando sull'icona a forma di matita"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textViewModificaEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Username"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <EditText
+                android:id="@+id/editTextTextModificaEmailAddress"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/inputstyledisabled"
+                android:clickable="false"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Inserisci username..."
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/GrigioHintText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModificaEmail" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:background="@color/BluFisio"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextModificaEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextModificaEmailAddress"
+                app:srcCompat="@drawable/baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/textViewModificaPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextModificaEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextTextModificaPassword"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/inputstyledisabled"
+                android:clickable="false"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Inserisci password..."
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/GrigioHintText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageButtonPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModificaPassword" />
+
+            <ImageButton
+                android:id="@+id/imageButtonPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/BluFisio"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTextModificaPassword"
+                app:layout_constraintEnd_toEndOf="@+id/imageButtonEmail"
+                app:layout_constraintStart_toStartOf="@+id/imageButtonEmail"
+                app:layout_constraintTop_toTopOf="@+id/editTextTextModificaPassword"
+                app:srcCompat="@drawable/baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/textViewModificaConfermaPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Conferma password"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextModificaPassword" />
+
+            <EditText
+                android:id="@+id/editTextTextModificaConfermaPassword"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/inputstyledisabled"
+                android:clickable="false"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/white"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Ripeti password..."
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/GrigioHintText"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextModificaPassword"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextModificaPassword"
+                app:layout_constraintTop_toBottomOf="@+id/textViewModificaConfermaPassword" />
+
+            <Button
+                android:id="@+id/buttonconfermamodifichecredenziali"
+                android:layout_width="330dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/stylebuttondisabled"
+                android:drawableEnd="@drawable/check"
+                android:drawableTint="@color/white"
+                android:paddingTop="3dp"
+                android:paddingEnd="10dp"
+                android:text="CONFERMA MODIFICHE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextModificaConfermaPassword" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Patologie"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonconfermamodifichecredenziali" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Di seguito troverai l'elenco delle tue patologie."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Le tue patologie:"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLeTuePatologie"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            <Button
+                android:id="@+id/Disconnettibutton"
+                android:layout_width="330dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bottom_background"
+                android:drawableEnd="@drawable/baseline_exit_to_app_24"
+                android:paddingEnd="10dp"
+                android:text="DISCONNETTI"
+                android:textAlignment="center"
+                android:textColor="@color/BluFisio"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewLeTuePatologie" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewProfilo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_background"
+        app:elevation="8dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/item_style"
+        app:itemTextColor="@color/item_style"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

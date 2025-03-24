@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BluFisio"
+    tools:context="com.example.myfisiocoach.HomepageActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewAllenamentopatologia"
+        android:layout_width="wrap_content"
+        android:layout_height="209dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="10dp"
+        app:cardBackgroundColor="@color/BluFisio"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewAllenamentiPatologie"
+            android:layout_width="365dp"
+            android:layout_height="210dp"
+            app:srcCompat="@drawable/designer__2_" />
+
+        <TextView
+            android:id="@+id/textViewallenamentopatologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="@color/BluFisio"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="3"
+            android:text="ALLENAMENTO GIORNALIERO"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

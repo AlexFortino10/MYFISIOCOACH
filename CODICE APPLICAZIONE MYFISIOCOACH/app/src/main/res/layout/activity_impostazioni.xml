@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BluFisio"
+    tools:context=".ImpostazioniActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="296dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/symbolmyfisiocoach" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationViewNotifiche"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButtonCambiaOraTerzoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@color/BluFisio"
+                app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                app:layout_constraintStart_toEndOf="@+id/MinutiTerzoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/textView48"
+                app:srcCompat="@drawable/modifica_baseline_access_time_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCambiaOraSecondoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@color/BluFisio"
+                app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                app:layout_constraintStart_toEndOf="@+id/MinutiSecondoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/textView46"
+                app:srcCompat="@drawable/modifica_baseline_access_time_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCambiaOraPrimoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:background="@color/BluFisio"
+                app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                app:layout_constraintStart_toEndOf="@+id/MinutiPrimoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/textView41"
+                app:srcCompat="@drawable/modifica_baseline_access_time_24" />
+
+            <Switch
+                android:id="@+id/switchbuttonMicrofono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:switchPadding="10dp"
+                android:text="Attiva microfono"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:thumbTint="@color/switch_style"
+                android:trackTint="@color/switch_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Concedendo l'accesso al microfono, potrai dialogare con l'avatar, rendendo il tuo percorso più personalizzato e coinvolgente. Questo aiuto ti permetterà di migliorare costantemente e segnalare eventuali difficoltà nei vari esercizi per progredire al meglio."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDialoghi" />
+
+            <TextView
+                android:id="@+id/textViewDialoghi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="43dp"
+                android:text="Dialoga con il tuo coach"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchbuttonNotifiche" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:layout_marginEnd="43dp"
+                android:text="Pianifica i tuoi esercizi"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Per ottenere progressi costanti, è fondamentale restare motivati! Abilita sia notifiche che sveglie e scegli un orario in cui riceverai un promemoria per il tuo allenamento. In questo modo, avrai un aiuto quotidiano per mantenere la costanza e raggiungere i tuoi obiettivi!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <Switch
+                android:id="@+id/switchbuttonNotifiche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:switchPadding="10dp"
+                android:text="Attiva notifiche"
+                android:textColor="@color/GrigioDisattivo"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:thumbTint="@color/switch_style"
+                android:trackTint="@color/switch_style"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:text="Programma di allenamento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/switchbuttonMicrofono" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Qui potrai cambiare gli orari degli allenamenti a tuo piacimento cliccando sull'icona a forma di orologio. Nota che gli allenamenti devono essere distanziati di almeno 3 ore l'uno dall'altro."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:text="PRIMO ALLENAMENTO"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <TextView
+                android:id="@+id/OraPrimoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textView41"
+                app:layout_constraintStart_toEndOf="@+id/textView41"
+                app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintStart_toEndOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/OraPrimoAllenamento" />
+
+            <TextView
+                android:id="@+id/MinutiPrimoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintStart_toEndOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/OraPrimoAllenamento" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:text="SECONDO ALLENAMENTO"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <TextView
+                android:id="@+id/OraSecondoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="13"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textView46"
+                app:layout_constraintStart_toEndOf="@+id/textView46"
+                app:layout_constraintTop_toTopOf="@+id/textView46" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/OraSecondoAllenamento"
+                app:layout_constraintEnd_toStartOf="@+id/MinutiSecondoAllenamento"
+                app:layout_constraintStart_toEndOf="@+id/OraSecondoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/OraSecondoAllenamento" />
+
+            <TextView
+                android:id="@+id/MinutiSecondoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/OraSecondoAllenamento"
+                app:layout_constraintStart_toEndOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/OraSecondoAllenamento" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="TERZO ALLENAMENTO"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+            <TextView
+                android:id="@+id/OraTerzoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="17"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textView48"
+                app:layout_constraintStart_toEndOf="@+id/textView48"
+                app:layout_constraintTop_toTopOf="@+id/textView48" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/OraTerzoAllenamento"
+                app:layout_constraintEnd_toStartOf="@+id/MinutiTerzoAllenamento"
+                app:layout_constraintStart_toEndOf="@+id/OraTerzoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/OraTerzoAllenamento" />
+
+            <TextView
+                android:id="@+id/MinutiTerzoAllenamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textView49"
+                app:layout_constraintStart_toEndOf="@+id/OraPrimoAllenamento"
+                app:layout_constraintTop_toTopOf="@+id/textView49" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewNotifiche"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_background"
+        app:elevation="8dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/item_style"
+        app:itemTextColor="@color/item_style"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

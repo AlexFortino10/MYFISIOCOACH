@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MYFISIOCOACH" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/BluFisio</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/GrigioDisattivo</item>
+    </style>
+    
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/white</item>
+         <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:background">@color/BluFisio</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarViewCustom" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/BluFisio</item>
+        <item name="colorPrimary">@color/BluFisio</item>
+        <item name="android:textColorPrimary">@color/BluFisio</item>
+    </style>
+
+    <style name="CalendarViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/GrigioDisattivo</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/BluFisio</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Tema personalizzato per il TimePickerDialog -->
+    <style name="CustomTimePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Personalizza qui gli attributi -->
+        <item name="colorAccent">@color/BluFisio</item>
+        <item name="android:textColorPrimary">@color/BluFisio</item>
+    </style>
+
+</resources>

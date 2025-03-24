@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/cardpatologia"
+    android:elevation="3dp"
+    tools:context="com.example.myfisiocoach.PatologieActivity">
+
+    <TextView
+        android:id="@+id/textViewPatologia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/check"
+        android:drawablePadding="10dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Nome Patolgia"
+        android:textColor="@color/BluFisio"
+        android:textSize="22sp"
+        android:textStyle="bold|italic" />
+</androidx.constraintlayout.widget.ConstraintLayout>
